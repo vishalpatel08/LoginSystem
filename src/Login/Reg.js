@@ -22,6 +22,7 @@ const Registration = () => {
     }).then((response)=>{
         console.log(response);
     })
+    setUser({name:"", email:"", password:""});
     } 
 
     return (
