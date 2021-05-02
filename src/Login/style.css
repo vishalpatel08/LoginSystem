@@ -1,0 +1,42 @@
+.outer-div{
+    width: 70%;
+    border-radius: 20px;
+    background-color: #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border: solid 1px grey;
+}
+
+.inner-div{
+    width:90%;
+    height: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+}
+
+.c-label{
+    float:left;
+    height:30px;
+    margin-right: 20%;
+}
+
+.c-input{
+    width: 90%;
+    height: 30px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 60%;
+}
+
+.cbtn{
+    width:70px;
+    height: 35px;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    background-color: aquamarine;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+
+}
