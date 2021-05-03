@@ -5,7 +5,7 @@ import {BrowserRouter, Route} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={window.location.pathname || ''}>
         <Route exact path="/" component={Login} />
         <Route exact path='/reg' component={Registration} />
       </BrowserRouter>
