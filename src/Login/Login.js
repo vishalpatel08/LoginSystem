@@ -1,18 +1,18 @@
 import React, {useState} from 'react'
 import './style.css'
-import {Link} from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
 import Axios from 'axios'
+
 const Login = () => {
     const [user , setUser] = useState({
         email:'',
         password:''
     })
-
+    let History = useHistory();
     const [status, setStatus] = useState("");
     const {email, password}= user;
     const Onchange = (e) => {
         setUser({...user, [e.target.name]: e.target.value});
-        console.log(e.target.value);
     }
     const OnSubmit = (e) => {
         e.preventDefault();
@@ -24,6 +24,7 @@ const Login = () => {
             setStatus(response.data.msg)
         }else{
             setStatus(" Welcome "+ response.data[0].Name)
+            History.push('/frontpage')
         }
     })
     }

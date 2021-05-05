@@ -20,7 +20,6 @@ const Registration = () => {
         email: email,
         password: password,
     }).then((response)=>{
-        console.log(response);
     })
     setUser({name:"", email:"", password:""});
     } 
